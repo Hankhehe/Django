@@ -1,4 +1,4 @@
-"""Home URL Configuration
+"""blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from post.views import PostListView, PostDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', PostListView.as_view()),
+    path('<pk>', PostDetailView.as_view())
 ]
