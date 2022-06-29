@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog', PostListView.as_view()),
     path('blog/<pk>', PostDetailView.as_view()),
-    path('probe', ProbeModelListView.as_view()),
-    path('probe/<pk>', ProbeModelDetailView.as_view()),
+    path('', ProbeModelListView.as_view()),
+    path('<pk>', ProbeModelDetailView.as_view()),
 ]
