@@ -5,8 +5,8 @@ from .models import ProbeModelDetail,ProbeList
 
 class ProbeModelListView(ListView):
     model = ProbeModelDetail
-    template_name = 'Probe_model_list'
+    template_name = 'Probe_model_list.html'
 
 class ProbeModelDetailView(DetailView):
     model = ProbeModelDetail
-    template_name = 'post_model_detail.html'
+    template_name = 'Probe_model_detail.html'

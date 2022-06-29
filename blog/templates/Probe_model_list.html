@@ -3,15 +3,18 @@
 <div class="container mt-5">
   <h1>型號清單</h1>
   <div class="row">
-    {% for post in object_list %}
+    {% for probe in object_list %}
 <div class="col-md-6">
       <div class="card my-3">
         <div class="card-body">
-          <h5 class="card-title">{{ post.title }}</h5>
-          <p class="card-text text-muted">
-            {{ post.content }}
-          </p>
-          <a href="probe/{{ post.id }}" class="card-link">閱讀更多</a>
+          <h5 class="card-title">型號：{{ probe.ModelName }}</h5>
+          <p class="card-text text-muted">CPU: {{ probe.CPU }}</p>
+          <p class="card-text text-muted">記憶體： {{ probe.Memony }}</p>
+          <p class="card-text text-muted">硬碟： {{ probe.HDD }}</p>
+          <p class="card-text text-muted">Port 數： {{ probe.PortCount }}</p>
+          <p class="card-text text-muted">使用數： {{ probe.UsedCount }}</p>
+          <p class="card-text text-muted">供應商： {{ probe.Provider }}</p>
+          <p class="card-text text-muted">備註： {{ probe.Note }}</p>
         </div>
       </div>
     </div>

@@ -2,15 +2,15 @@
  {% block body %}
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">詳細資料</a></li>
+    <li class="breadcrumb-item"><a href="/probe">詳細資料</a></li>
     <li class="breadcrumb-item active" aria-current="page">
-      {{ Probe.ModelName }}
+      {{ probemodeldetail.ModelName }}
     </li>
   </ol>
 </nav>
 <div class="container mt-2">
-  <h1>{{ Probe.ModelName }}</h1>
+  <h1>{{ probemodeldetail.ModelName }}</h1>
   <hr />
-  <p>{{ Probe.PortCount }}</p>
+  <p>{{ probemodeldetail.PortCount }}</p>
 </div>
 {% endblock %}

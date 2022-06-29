@@ -9,6 +9,7 @@ class ProbeModelDetail(models.Model):
     Memony = models.CharField(max_length=50)
     HDD = models.CharField(max_length=50)
     Provider = models.IntegerField()
+    UsedCount = models.IntegerField()
     Note = models.CharField(max_length=200,null=True,blank=True)
 
 class ProbeList(models.Model):
