@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from post.views import PostListView, PostDetailView
-from Probe.views import ProbeModelListView,ProbeModelDetailView
+from Probe.views import ProbeModelListView,ProbeListVView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog', PostListView.as_view()),
+    path('blog/', PostListView.as_view()),
     path('blog/<pk>', PostDetailView.as_view()),
-    path('', ProbeModelListView.as_view()),
-    path('<pk>', ProbeModelDetailView.as_view()),
+    path('models/', ProbeModelListView.as_view()),
+    path('models/<pk>', ProbeListVView.as_view()),
 ]

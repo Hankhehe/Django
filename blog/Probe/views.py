@@ -7,6 +7,6 @@ class ProbeModelListView(ListView):
     model = ProbeModelDetail
     template_name = 'Probe_model_list.html'
 
-class ProbeModelDetailView(DetailView):
-    model = ProbeModelDetail
-    template_name = 'Probe_model_detail.html'
+class ProbeListVView(ListView):
+    model = ProbeList
+    template_name = 'Probe_list_by_model.html'
