@@ -14,14 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from post.views import PostListView, PostDetailView
-from Probe.views import ProbeModelListView,ProbeListVView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', PostListView.as_view()),
     path('blog/<pk>', PostDetailView.as_view()),
-    path('models/', ProbeModelListView.as_view()),
-    path('models/<pk>', ProbeListVView.as_view()),
+    path('Probes/',include('Probe.urls')), #將 /Probe App 中的 url 載入 
 ]
