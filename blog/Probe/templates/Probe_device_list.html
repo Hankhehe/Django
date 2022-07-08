@@ -2,10 +2,8 @@
  {% block body %}
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="./">型號清單</a></li>
     <li class="breadcrumb-item active" aria-current="page">
-      {% comment %} {{ probemodeldetail.ModelName }} {% endcomment %}
-      測試頁面
+      Probe 清單
     </li>
   </ol>
 </nav>
@@ -35,12 +33,4 @@
 
 </table>
 </div>
-
-{% comment %} <div class="container mt-2">
-  <h1>{{ probemodeldetail.ModelName }}</h1>
-  <hr />
-  <p>{{ probemodeldetail.PortCount }}</p>
-  <p>{{ probemodeldetail.PortCount }}</p>
-  <p>{{ probemodeldetail.PortCount }}</p>
-</div> {% endcomment %}
 {% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+ {% block body %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      Probe 清單
+    </li>
+  </ol>
+</nav>
+<div class="card my-3">
+<table>
+  <thead>
+      <tr>
+          <th colspan="1">P110</th>
+          <th colspan="1">P110+</th>
+          <th colspan="1">P220</th>
+          <th colspan="1">P360</th>
+          <th colspan="1">P560</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    {% comment %} {% for Data in Datas %} {% endcomment %}
+      <tr>
+          <td>{{ P110 }}</td>
+          <td>{{ P110Plus }}</td>
+          <td>{{ P220 }}</td>
+          <td>{{ P360 }}</td>
+          <td>{{ P560 }}</td>
+      </tr>
+  {% comment %} {% endfor %} {% endcomment %}
+  </tbody>
+
+</table>
+</div>
+{% endblock %}
