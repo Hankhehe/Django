@@ -1,0 +1,30 @@
+{% extends 'Probe_base.html' %}
+ {% block body %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      Probe 清單
+    </li>
+  </ol>
+</nav>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card my-3">
+      {% comment %} <div class="card-body"> {% endcomment %}
+        <h5 class="card-title">Probe 數量統計</h5>
+        <p class="card-text text-muted">P110  : {{ P110 }}</p>
+        <p class="card-text text-muted">P110+ : {{ P110Plus }}</p>
+        <p class="card-text text-muted">P220  : {{ P220 }}</p>
+        <p class="card-text text-muted">P360  : {{ P360 }}</p>
+        <p class="card-text text-muted">P560  : {{ P560 }}</p>
+      {% comment %} </div> {% endcomment %}
+    </div>
+  </div>
+</div>
+<div>
+  <a href='/Probes/Models'>Probe Model 資料 </a>
+</div>
+<div>
+  <a href='/Probes/Probes'>Probe 資訊 </a>
+</div>
+{% endblock %}
